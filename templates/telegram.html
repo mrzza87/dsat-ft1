@@ -7,12 +7,22 @@
 <body>
     <div class="container">
         <h2>Telegram Bot</h2>
-        <p>Click below to open the bot on Telegram:</p>
-        <a href="{{ bot_link }}" target="_blank">
-            <button>Open Telegram Bot</button>
+        <p>Click below to chat with me:</p>
+
+        <!-- Safari/iOS friendly deep link -->
+        <a href="tg://resolve?domain=marissaybot">
+            <button>Open in Telegram App</button>
         </a>
+
+        <br><br>
+
+        <!-- Fallback for desktop browsers -->
+        <p>Or open in browser:</p>
+        <a href="{{ bot_link }}" target="_blank">{{ bot_link }}</a>
+
         <br><br>
         <a href="/main"><button>Back to Main</button></a>
     </div>
 </body>
 </html>
+
