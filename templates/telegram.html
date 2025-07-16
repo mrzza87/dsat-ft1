@@ -9,20 +9,19 @@
         <h2>Telegram Bot</h2>
         <p>Click below to chat with me:</p>
 
-        <!-- Safari/iOS friendly deep link -->
-        <a href="tg://resolve?domain=marissaybot">
-            <button>Open in Telegram App</button>
+        <!-- ✅ Telegram Web fallback (works on Safari/Chrome) -->
+        <a href="https://t.me/marissaybot" target="_blank">
+            <button>Open in Telegram Web</button>
         </a>
 
         <br><br>
 
-        <!-- Fallback for desktop browsers -->
-        <p>Or open in browser:</p>
-        <a href="{{ bot_link }}" target="_blank">{{ bot_link }}</a>
+        <p>Or search <b>@marissaybot</b> directly in your Telegram app.</p>
 
         <br><br>
         <a href="/main"><button>Back to Main</button></a>
     </div>
 </body>
 </html>
+
 
