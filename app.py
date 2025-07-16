@@ -5,7 +5,6 @@ import os
 import requests
 
 # ✅ Environment variables
-os.environ['GROQ_API_KEY'] = os.getenv("groq")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")  # set this in Render
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
 
